@@ -13,7 +13,7 @@ int _strlen(char *s)
 	{
 		i++;
 	}
-	return (1);
+	return (i);
 }
 /**
  * _strcpy - copy string
@@ -58,5 +58,6 @@ char *_strdup(char *str)
 	}
 	_strcpy(dst, str);
 	return (dst);
+
 	free(dst);
 }
