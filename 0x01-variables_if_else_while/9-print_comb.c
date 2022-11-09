@@ -9,10 +9,14 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		putchar(i % 10 + '0');
-		putchar(',');
-		putchar(' ');
+		if (i == 9)
+			putchar(i % 10 + '0');
+		else
+		{
+			putchar(i % 10 + '0');
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar('\n');
 	return (0);
 }
