@@ -5,18 +5,18 @@
  */
 int main(void)
 {
-	int i;
+	int a;
 
-	for (i = 0; i <= 9; i++)
+	for (a = 0; a <= 9; a++)
 	{
-		if (i == 9)
-			putchar(i % 10 + '0');
-		else
+		putchar(a + '0');
+
+		if (a < 9)
 		{
-			putchar(i % 10 + '0');
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
