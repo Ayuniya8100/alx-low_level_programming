@@ -10,7 +10,7 @@ int main(void)
 	int num1 = 0, num2 = 1;
 	int num3  = num1 + num2;
 
-	for (i = 3; i <= 50; i++)
+	for (i = 1; i <= 50; i++)
 	{
 		printf("%d, ", num3);
 		num1 = num2;
