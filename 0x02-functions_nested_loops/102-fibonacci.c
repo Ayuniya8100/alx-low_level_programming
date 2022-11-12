@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%d, ", num3);
+		printf("%lu, ", num3);
 		num1 = num2;
 		num2 = num3;
 		num3 = num1 + num2;
