@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i;
-	unsigned int num1 = 0, num2 = 1;
+	unsigned int num1 = 1, num2 = 2;
 	unsigned int num3  = num1 + num2;
 
 	for (i = 3; i <= 50; i++)
