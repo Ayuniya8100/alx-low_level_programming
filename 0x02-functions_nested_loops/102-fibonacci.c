@@ -7,8 +7,8 @@
 int main(void)
 {
 	int i;
-	int num1 = 0, num2 = 1;
-	int num3  = num1 + num2;
+	long int num1 = 0, num2 = 1;
+	long int num3  = num1 + num2;
 
 	for (i = 1; i <= 50; i++)
 	{
