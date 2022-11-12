@@ -12,10 +12,15 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%lu, ", num3);
-		num1 = num2;
-		num2 = num3;
-		num3 = num1 + num2;
+		if (num3 != 20365011074)
+			printf("%lu, ", num3);
+		else
+		{
+			printf("%lu", num3);
+			num1 = num2;
+			num2 = num3;
+			num3 = num1 + num2;
+		}
 	}
 	return (0);
 }
