@@ -16,7 +16,7 @@ int main(void)
 			printf("%lu, ", num3);
 		else
 		{
-			printf("%lu", num3);
+			printf("%lu\n", num3);
 		}
 		num1 = num2;
 		num2 = num3;
