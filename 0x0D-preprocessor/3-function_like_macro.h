@@ -1,7 +1,5 @@
-#ifndef ABS
-#define ABS(X) (if (x < 0) \
-	ABS(X) = (-1 * (x)) \
-	else \
-	ABS(X) = (x))
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
+#define ABS(X) ((X < 0) ? (-X) : (X))
 #endif
