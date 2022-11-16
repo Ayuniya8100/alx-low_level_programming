@@ -1,6 +1,6 @@
 #include "dog.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - function name
  * @d: pointer
