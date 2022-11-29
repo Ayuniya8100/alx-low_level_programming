@@ -1,0 +1,28 @@
+#include "list.h"
+/**
+ * print_list - to print list of element
+ * @h: head of the nood
+ * Return: return number of noode
+ */
+
+size_t print_list(const list_t *h)
+{
+	const list_t  *temp;
+	char *str;
+	int len;
+
+	temp = h;
+
+	while (temp->next != NULL)
+	{
+		if (str == NULL)
+			printf("[0](nil)\n");
+		else
+		{
+			printf("%s", temp->str);
+		}
+		len++;
+		temp = temp->next;
+	}
+	return (len);
+}
