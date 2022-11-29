@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
  * print_list - to print list of element
  * @h: head of the nood
