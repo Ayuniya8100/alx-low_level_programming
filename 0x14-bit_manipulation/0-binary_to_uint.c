@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * binary_to_uint - change binary to decimal
  * @b:  pointer to binary numbers
@@ -9,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int i;
 	unsigned int power = 0;
 	unsigned int sum = 0;
-	unsigned int value = 0;
+	unsigned int value;
 	const char *s;
 
 	s = b;
@@ -24,14 +25,11 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		else
-		{
-			i = *b - '0';
-			value = i * (1 << power);
-			sum = sum + value;
-			b--;
-			power++;
-		}
+		i = *b - '0';
+		value = i * (1 << power);
+		sum = sum + value;
+		b--;
+		power++;
 	}
-		return (sum);
+	return (sum);
 }
