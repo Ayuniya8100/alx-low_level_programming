@@ -5,16 +5,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i;
-	unsigned int x;
+	int c;
+	unsigned int mask = 1 << 31;
 
-	for (i = 31; i >= 0; i--)
+	for (c = 1; c <= 32; ++c)
 	{
-		x = n & (1 << i);
-
-		if (x == 0)
-			_putchar('0');
-		else
-			_putchar('1');
+		_putchar(n & mask ? '1' : '0');
+		n <<= 1;
 	}
+	_putchar ('\n');
 }
